@@ -1,0 +1,64 @@
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password ="";
+    $dbname = "project";
+    
+    // Create a connection
+    $conn = mysqli_connect($servername,$username,$password,$dbname);
+    
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+    <div class="Tid">
+            <label>Tid</label>
+            <select name="tid" onchange="getId(this.value);">
+                <option value=""></option>
+                
+                <?php
+                    $query = "SELECT * FROM takactivitites";
+                    $results=mysqli_query($conn, $query);
+                    
+                    foreach ($results as $data){
+                ?>
+                        <option value="<?php echo $data["Tid"];?>"><?php echo $data["Tid"];?></option>
+                <?php
+                    }
+                ?>
+            </select>
+        </div>
+        <div>
+            
+
+            <label>Activityid</label>
+            <select name="acivityid" id="act">
+                <option value=""></option>
+            </select>
+        </div>
+        
+    
+    </body>
+</html>
+<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-
+16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous">  
+    </script>
+    <script>
+        function getId(val){
+
+            //test  alert(val); 
+            
+            $.ajax({
+                type: "POST",
+                url: "getdata.php",
+                data: "tid="+val,
+                success: function(data){
+                    $("#act").html(data);
+                }
+            });
+        }
+    </script>

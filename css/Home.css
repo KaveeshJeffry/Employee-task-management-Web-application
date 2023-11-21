@@ -1,0 +1,71 @@
+.div2{
+    position: absolute;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+
+    
+    background: rgba(0, 0, 0, 0.308);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+}
+label{
+    color: white;;
+}
+
+h1{
+    color: aliceblue;
+}
+input[type="text"] {
+    padding: 10px ;
+    width: 30vh;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: #ffffff;;
+}
+input[type="password"] {
+    padding: 10px ;
+    width: 30vh;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: #ffffff;;
+}
+#submit {
+    transition-duration: 0.4s;
+    background-color: rgba(26, 42, 56, 0);
+    border: 1px;
+    border-radius: 12px;
+    padding: 10px;
+    color: aliceblue;
+    box-shadow: 1px 1px #000000;
+    margin: 10px;
+    float : right;
+    }
+    
+     #submit:hover {
+      background-color: #000000; 
+      color: white;
+      
+    }
+a{
+    transition-duration: 0.4s;
+    background-color: rgba(26, 42, 56, 0);
+    border: 1px;
+    border-radius: 12px;
+    padding: 10px;
+    color: aliceblue;
+    box-shadow: 1px 1px #000000;
+    margin: 10px;
+    float   : right;
+}
+a:hover {
+    background-color: #000000; 
+    color: white;
+    
+  }

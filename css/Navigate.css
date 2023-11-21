@@ -1,0 +1,108 @@
+
+.navi{
+    background-color: rgb(255, 255, 255);
+    padding-top: 0.2%;
+    padding-right: 3%;
+    padding-bottom: 0.2%;
+    padding-left: 3%;
+    
+    background: rgba(0, 0, 0, 0.308);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff00;
+    
+}
+  
+li {
+    float: left;}
+  
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+  
+li a:hover {
+    background-color: #000000;}
+
+.table1{
+    text-align: center;
+    margin: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0);
+        
+}
+th{
+    padding: 10px;
+    background-color: #00000000;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+}
+tr{
+    color: white;
+  }
+  td{
+    padding: 5px;
+  }
+.div2{
+    left: 40%;
+    position: absolute;
+    margin-top: 100px;
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.308);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.47);
+}
+h1{
+    color: aliceblue;
+}
+.logout{
+
+    text-align: center;
+    padding: 7px;
+    border-radius: 30px;
+    background-color: rgb(37, 54, 46);
+    float: right;
+  }
+
+  
+.logout:hover {
+    background-color: #ff0202;
+  }
+button{
+    transition-duration: 0.4s;
+    background-color: rgba(26, 42, 56, 0);
+    border: 1px;
+    border-radius: 12px;
+    padding: 10px;
+    color: aliceblue;
+    box-shadow: 1px 1px #000000;
+    margin: 30px;
+}
+button:hover {
+    background-color: #000000; 
+    color: white;
+    
+  }

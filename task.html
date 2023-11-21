@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head> <title> Task </title> 
+        <link rel="stylesheet" href="css/task.css" type="text/css">
+
+        <style>
+            body {
+            
+            background-color: hsl(221, 93%, 21%);
+            background-image: url(images/img14.jpg);
+            background-repeat: no-repeat;
+            
+    
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class=navi>
+            <ul>
+            <li><a href="Navigate.php">Home page</a></li>
+            <li><a href="emp.html">Employee</a></li>
+            <li><a href="task.html">Register tasks</a></li>
+            <li><a href="Activity.php">Activities</a></li>
+            <li><a href="Assign.php">Assign Tasks</a></li>
+            <li ><a  href="AccessChanger.php">Admin</a></li>
+            <li class="logout"><a class= "logout" href="logout.php">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="div1">
+            <h1>Tasks</h1>
+            <table>
+                <form method="POST" action="regTAsk.php">
+
+                    <tr>
+                        <td>
+                            <label for="tid">Tid</label>
+                        </td>
+                        <td>
+                            <input  type="text" name="tid" id="tid" minlength="3" maxlength="5"required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="startdate">Start Date</label>
+                        </td>
+                        <td>
+                            <input type="date" name="startdate" id="startdate" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="enddate">End Date</label>
+                        </td>
+                        <td>
+                            <input type="date" name="enddate" id="enddate" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nature">Nature</label>
+                        </td>
+                        <td>
+                            <input type="text" name="nature" id="nature">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <input type="submit" id="submit" name="submit" value="Submit">
+                        </td>
+                    </tr>
+
+                </form>
+
+            </table>
+        </div>
+
+    </body>
+
+</html>
